@@ -1,7 +1,7 @@
-function optimiseBookings(intervals) {
+function optimiseBookings(bookings) {
     var points = [];
-    for (var _i = 0, intervals_1 = intervals; _i < intervals_1.length; _i++) {
-        var interval = intervals_1[_i];
+    for (var _i = 0, bookings_1 = bookings; _i < bookings_1.length; _i++) {
+        var interval = bookings_1[_i];
         points.push([interval[0], "x"]);
         points.push([interval[1], "y"]);
     }
@@ -69,17 +69,17 @@ var testCase4 = [
 var testCase5 = [];
 // Grouping all test cases together for easy execution
 var testCases = [
-    { description: "Random 1000 Intervals", intervals: testCase1 },
-    { description: "Non-overlapping Intervals", intervals: testCase2 },
-    { description: "Consecutive Touching Intervals", intervals: testCase3 },
-    { description: "Already Merged Intervals", intervals: testCase4 },
-    { description: "Empty Intervals", intervals: testCase5 },
+    { description: "Random 1000 Intervals", bookings: testCase1 },
+    { description: "Non-overlapping Intervals", bookings: testCase2 },
+    { description: "Consecutive Touching Intervals", bookings: testCase3 },
+    { description: "Already Merged Intervals", bookings: testCase4 },
+    { description: "Empty Intervals", bookings: testCase5 },
 ];
 // Running all test cases
 testCases.forEach(function (test, index) {
     console.log("Test Case ".concat(index + 1, ": ").concat(test.description));
-    console.log("INPUT:\n", test.intervals);
-    var result = optimiseBookings(test.intervals);
+    console.log("INPUT:\n", test.bookings);
+    var result = optimiseBookings(test.bookings);
     console.log("OUTPUT:");
     console.log(result, "\n\n");
 });
