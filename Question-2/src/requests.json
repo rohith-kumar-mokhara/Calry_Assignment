@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "guestName": "Alice Smith",
+    "roomNumber": 101,
+    "requestDetails": "Extra towels and toiletries.",
+    "priority": 2,
+    "status": "received"
+  },
+  {
+    "id": 2,
+    "guestName": "Bob Johnson",
+    "roomNumber": 202,
+    "requestDetails": "Dinner service for two at 7 PM.",
+    "priority": 1,
+    "status": "in progress"
+  },
+  {
+    "id": 3,
+    "guestName": "Charlie Brown",
+    "roomNumber": 303,
+    "requestDetails": "Wake-up call at 6 AM.",
+    "priority": 3,
+    "status": "awaiting confirmation"
+  },
+  {
+    "id": 4,
+    "guestName": "David Wilson",
+    "roomNumber": 404,
+    "requestDetails": "Room cleaning service.",
+    "priority": 2,
+    "status": "completed"
+  },
+  {
+    "id": 5,
+    "guestName": "Eva Green",
+    "roomNumber": 505,
+    "requestDetails": "Request for a late checkout.",
+    "priority": 1,
+    "status": "canceled"
+  }
+]
