@@ -1,4 +1,4 @@
-function mergeIntervals(intervals) {
+function optimiseBookings(intervals) {
     var points = [];
     for (var _i = 0, intervals_1 = intervals; _i < intervals_1.length; _i++) {
         var interval = intervals_1[_i];
@@ -78,6 +78,8 @@ var testCases = [
 // Running all test cases
 testCases.forEach(function (test, index) {
     console.log("Test Case ".concat(index + 1, ": ").concat(test.description));
-    var result = mergeIntervals(test.intervals);
-    console.log(result);
+    console.log("INPUT:\n", test.intervals);
+    var result = optimiseBookings(test.intervals);
+    console.log("OUTPUT:");
+    console.log(result, "\n\n");
 });

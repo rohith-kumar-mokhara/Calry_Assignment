@@ -1,4 +1,4 @@
-function mergeIntervals(intervals: number[][]): number[][] {
+function optimiseBookings(intervals: number[][]): number[][] {
   const points: [number, string][] = [];
 
   for (const interval of intervals) {
@@ -91,6 +91,8 @@ const testCases = [
 // Running all test cases
 testCases.forEach((test, index) => {
   console.log(`Test Case ${index + 1}: ${test.description}`);
-  const result = mergeIntervals(test.intervals);
-  console.log(result);
+  console.log("INPUT:\n", test.intervals)
+  const result = optimiseBookings(test.intervals);
+  console.log("OUTPUT:")
+  console.log(result, "\n\n");
 });
